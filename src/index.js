@@ -2,6 +2,8 @@ import express from "express";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
+import indexRoutes from "./routes/index.js";
+
 const app = express()
 
 //Trayendo la ruta absoluta con dirname y fileURLToPath
@@ -11,8 +13,9 @@ console.log(join(__dirname, 'views')); //--> Así es como se ve la ruta absoluta
 app.set("views", join(__dirname, 'views')) //join se utiliza para que el slash sea el adecuado dependiendo del sistema operativo
 app.set("view engine", "ejs" )
 
-//Getters
-app.get('/', (req,res) => res.render('index'))
+app.use(indexRoutes) //utilizando el rutero de la carpeta /routes
+
+app.use(express.static(join(__dirname, 'public')))
 
 app.listen(3000)
 console.log('Servidor en el puerto', 3000);

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(78, 201, 21, .55) 0%,
+        rgba(78, 201, 21, .55) 20%,
+        rgba(131, 207, 95, .55) 40%,
+        rgba(131, 207, 95, .55) 60%,
+        transparent 80%,
+        transparent 100%
+        );
+}
+.ejemplo-footer{
+    display: flex;
+    flex: content;
+    padding: 50px;;
+    text-align: center;
+}
+.content{
+    padding: 70px 20px 10px 20px;
+}
