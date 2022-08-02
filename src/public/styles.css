@@ -2,25 +2,62 @@
     margin: 0;
 }
 .navbar{
-    display: flex;
-    position: fixed;
     width: 100%;
     background: linear-gradient(
         90deg,
-        rgba(78, 201, 21, .55) 0%,
-        rgba(78, 201, 21, .55) 20%,
-        rgba(131, 207, 95, .55) 40%,
-        rgba(131, 207, 95, .55) 60%,
-        transparent 80%,
+        rgba(159, 21, 201, 0.95) 0%,
+        rgba(195, 21, 201, 0.9) 20%,
+        rgba(175, 95, 207, 0.85) 40%,
+        rgba(175, 95, 207, 0.85) 80%,
         transparent 100%
         );
 }
-.ejemplo-footer{
-    display: flex;
-    flex: content;
-    padding: 50px;;
-    text-align: center;
+body{
+    background-color: rgb(36, 34, 34);
+    color: antiquewhite;
 }
 .content{
-    padding: 70px 20px 10px 20px;
+    padding: 40px 20px 10px 20px;
+}
+#list-example{
+    overflow-y: hidden;
+    display: block;
+    float: inline-start;
+    position: absolute;
+    margin: 0;
+    width: 300px;
+}
+@media (max-width:1000px){
+    #list-example{
+        width: calc(25vw);
+    }
+}
+.list-group-item{
+    overflow-y: visible;
+    background-color: rgb(39, 38, 38);
+    color: #fff;
+}
+.bd-scrollspy{
+    overflow-y: scroll;
+    border-radius: 5px;
+    border: 1px #000 solid;
+    padding: 20px;
+    width: 100%;
+    height:25rem;
+    overflow: auto;
+}
+footer{
+    background-color: #000;
+    margin: 0 auto;
+}
+.foo-list{
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    float: left;
+    padding-left: 20px;
+}
+.foo-link{
+    text-decoration: none;
+    color: #fff;
 }
