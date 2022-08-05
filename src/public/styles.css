@@ -1,54 +1,85 @@
-*{
-    margin: 0;
-}
-.navbar{
-    width: 100%;
-    background: linear-gradient(
-        90deg,
-        rgba(159, 21, 201, 0.95) 0%,
-        rgba(195, 21, 201, 0.9) 20%,
-        rgba(175, 95, 207, 0.85) 40%,
-        rgba(175, 95, 207, 0.85) 80%,
-        transparent 100%
-        );
+html{
+    min-height: 100%;
 }
 body{
-    background-color: rgb(36, 34, 34);
-    color: antiquewhite;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ab9680;
 }
-.content{
-    padding: 40px 20px 10px 20px;
+/* NAVBAR SECTION OF THE HTML DOCUMENT */
+.navbar{
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #706942;
+    opacity: .90;
+    z-index: 999;
+}
+#profile-picture{
+    width: 75%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 2px;
+    border: 2px dotted #5f4633;
+    border-radius: 100px 25px;
+}
+/* FIRTS SECTION OF THE HTML DOCUMENT */
+.container-scrollspy{
+    border-top: 1px solid whitesmoke;
+    width: 100%;
+    height:25rem;
+    display: grid;
+    flex: auto;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    padding: 5px;
+    grid: auto / 20% auto;
+    overflow: auto;
+}
+div .col-4{
+    display: contents;
+    overflow-y: hidden;
+    width: 20%;
+    position: absolute;
+}
+div .col-8{
+    display: block;
+    overflow: auto;
+    width: 100%;
+    float: right;
 }
 #list-example{
-    overflow-y: hidden;
-    display: block;
-    float: inline-start;
-    position: absolute;
-    margin: 0;
-    width: 300px;
-}
-@media (max-width:1000px){
-    #list-example{
-        width: calc(25vw);
-    }
+    width: 100%;
 }
 .list-group-item{
     overflow-y: visible;
-    background-color: rgb(39, 38, 38);
     color: #fff;
 }
-.bd-scrollspy{
-    overflow-y: scroll;
-    border-radius: 5px;
-    border: 1px #000 solid;
-    padding: 20px;
+.list-group-item-action{
     width: 100%;
-    height:25rem;
-    overflow: auto;
+    background: #706942;
 }
+#text-section{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: none;
+    padding: 10px;
+    grid: auto / 35% auto;
+}
+#text-section div{
+    text-align: center;
+    padding: 20px 0;
+}
+/* FOOTER SECTION STYLESHEET */
 footer{
     background-color: #000;
-    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    color: #fff;
 }
 .foo-list{
     margin: 0 auto;
@@ -56,8 +87,13 @@ footer{
     display: flex;
     float: left;
     padding-left: 20px;
-}
+}   
 .foo-link{
     text-decoration: none;
     color: #fff;
+}
+@media (max-width:1000px){
+    #list-example{
+        width: calc(25vw);
+    }
 }
