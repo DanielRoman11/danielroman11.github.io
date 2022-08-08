@@ -4,15 +4,14 @@ html{
 body{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #ab9680;
+    background: #4abdac;
+    color: #dfdce3;
 }
 /* NAVBAR SECTION OF THE HTML DOCUMENT */
 .navbar{
-    position: static;
     top: 0;
     left: 0;
     width: 100%;
-    background: #706942;
     opacity: .90;
     z-index: 999;
 }
@@ -28,7 +27,7 @@ body{
 .container-scrollspy{
     border-top: 1px solid whitesmoke;
     width: 100%;
-    height:25rem;
+    height: 25rem;
     display: grid;
     flex: auto;
     grid-template-columns: auto auto;
@@ -49,7 +48,7 @@ div .col-8{
     width: 100%;
     float: right;
 }
-#list-example{
+#list-knowledge{
     width: 100%;
 }
 .list-group-item{
@@ -58,7 +57,7 @@ div .col-8{
 }
 .list-group-item-action{
     width: 100%;
-    background: #706942;
+    background: #fc4a1a;
 }
 #text-section{
     height: 100%;
@@ -76,24 +75,35 @@ div .col-8{
 /* FOOTER SECTION STYLESHEET */
 footer{
     background-color: #000;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    grid: auto / auto auto;
     width: 100%;
-    height: 2rem;
+    height: 20%;
     color: #fff;
-}
-.foo-list{
+    align-items: center;
     margin: 0 auto;
+    position: absolute;
+}
+.footer-section1{
+    bottom: 0;
+    margin: 0;
+    border-right: 1px solid #ab9680;
+}
+.foo-li{
     list-style: none;
-    display: flex;
-    float: left;
-    padding-left: 20px;
-}   
+    padding-left: 10px;
+}
 .foo-link{
     text-decoration: none;
     color: #fff;
 }
-@media (max-width:1000px){
-    #list-example{
-        width: calc(25vw);
+@media (max-width: 960px){
+    #text-section{
+        grid: auto / auto;
+    }
+    .container-scrollspy{
+        grid: auto / 30% auto;
+        font-size: small;
     }
 }
