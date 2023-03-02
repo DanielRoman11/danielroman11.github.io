@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import router from "./router/routes.js";
 
 
-const app = express()
+const app = express();
 
 //Trayendo la ruta absoluta con dirname y fileURLToPath
 const __dirname = dirname(fileURLToPath(import.meta.url))
