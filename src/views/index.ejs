@@ -8,9 +8,6 @@
     <title>CV | Daniel Román</title>
 </head>
   <body>
-    <header>
-        <%- include('partials/navigation') %>
-    </header>
     <section id="text-section">
       <div class="item-1">
         <img id="profile-picture" src="images/ProfilePicture.jpeg" alt="Profile Picture of Daniel Román" />
@@ -18,27 +15,29 @@
         <p>Student of Systems Engeeniering at Ean University</p>
       </div>
       <div class="item-2">
-        <h1>Professional aspirations</h1>
+        <h1>About me</h1>
         <p class="fw-bold pt-5">
-          Work developing web applications or software. Learn from my team and the technologies they use, to improve my skills as an engineer and as a person.
+          Systems engineer in process, with experience in web, desktop and videogames development. I would love to use my programming skills, critical thinking, creativeness and problem solving skills to make an impact through your company in a positive way. I also want to grow personally and professionally.
         </p>
         
         <h1 class="pt-5">Software Skills</h1>
         <section class="container-scrollspy">
-          <div class="col-4 pt-6">
-            <div id="list-knowledge" class="list-group">
-              <a class="list-group-item list-group-item-action" href="#list-Java">JAVA, SQL SERVER</a>
-              <a class="list-group-item list-group-item-action" href="#list-CS">C#, ASP.NET, C++, HLSL</a>
+          <div class="pt-6 col-8" id="list-scroll-spy">
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-Java">JAVA</a>
+              <a class="list-group-item list-group-item-action" href="#list-CS">C#, ASP.NET</a>
               <a class="list-group-item list-group-item-action" href="#list-html">HTML, CSS, JS</a>
-              <a class="list-group-item list-group-item-action" href="#list-Node">JS, EJS, NODE.JS</a>
+              <a class="list-group-item list-group-item-action" href="#list-Node">NODE.JS, EXPRESS, EJS</a>
+              <a class="list-group-item list-group-item-action" href="#list-Express">NODE.JS, EXPRESS, PUG, MYSQL</a>
             </div>
+            
           </div>
           <div class="col-8">
-            <div data-bs-spy="scroll" data-bs-target="#list-knowledge" data-bs-smooth-scroll="true" class="scrollspy-example text-start">
+            <div data-bs-spy="scroll" data-bs-target="#list-scroll-spy" data-bs-offset="0" class="scrollspy-example" tabindex="0">
               <h4 id="list-Java">JAVA</h4>
               <p>
-                I made a software that use the information from a database created in Microsoft SQL server using the architectural-pattern MVC (model-view-controller).
-                <br>This application uses a CRUD (Create, Read, Update and Delete), with the purpose of administrated a inventory of valves for Hidroconsulting SAS.
+                This application uses a CRUD (Create, Read, Update and Delete), with the purpose of administrated a inventory of valves for Hidroconsulting SAS.
+                <br>This project does not use a database, so everything is save in the memory of the system
                 <br>You can see all the documentation and the application on my GitHub:
                 <br><a href="https://github.com/DanielRoman11/JavaApplication1">Valve Inventory for Hidroconsulting</a>
               </p>
@@ -57,17 +56,23 @@
                 <br>All the documentation of this web is in my GitHub:
                 <br><a href="">Responsive Web Designed</a>
               </p>
-              <h4 id="list-Node">Node.JS Express Framework</h4>
+              <h4 id="list-Node">NodeJS, EJS</h4>
               <p>
-                This website was created with HTML with EJS, CSS, JavaScript and Node.Js for the Back End, and I'm using for this website the framework Boostrap 5.2.
+                This website was created with HTML using the template engine PUG, pure CSS and bootstrap5.1 for the design.  for the Back End, and I'm using for this website the framework Boostrap 5.2. 
                 <br>You can see all the documentation for this website on my GitHub:
                 <a href="https://github.com/DanielRoman11/Express-Project">Portfolio with Node.JS and Express</a>
+              </p>
+              <h4 id="list-Express">NodeJS, PUG, MYSQL, EXPRESS</h4>
+              <p>
+                This website was created with HTML using the template engine PUG, pure CSS and tailwindCSS for the design.  for the Back End I'm using express. This website it's under construction.
+                <br>You can see all the documentation for this website on my GitHub:
+                <a href="https://github.com/DanielRoman11/BienesRaices">Bienes Raices project on build</a>
               </p>
             </div>
           </div>
         </section>
       </div>
-      <div class="item-3 text-center d-flex justify-content-center">
+      <div class="item-3">
         <div class="card text-bg-dark mb-3" >
           <div class="card-body">
             <h5 class="card-title pb-3">Contact information</h5>
@@ -76,7 +81,7 @@
         </div>
         <div class="card text-bg-dark mb-3" >
           <div class="card-body">
-            <h5 class="card-title pb-3">Aptitudes</h5>
+            <h5 class="card-title pb-3">Capabilities</h5>
             <p class="card-text text-start">Effective Comunication<br>Active Listening<br>Resilience<br>Team Work<br>Capacity of learning<br>Autonomy<br>Investigation capacity<br>Flexibility and Adaptability<br>Critical Thinking
           </div>
         </div> 
@@ -87,8 +92,6 @@
           </div>
         </div> 
       </div>
-      
-      
       <div class="item-4">
         <!-- Formation Section -->
         <h1>Formation</h1>
@@ -97,22 +100,43 @@
           <div>Bachelor</div>
           <div>Colegio Interamericano</div>
           <div>2019 - current</div>
-          <div>Systems Engineering - 7th (/8) semester</div>
+          <div>Systems Engineering - 8th Semester</div>
           <div>Ean University</div>
           <div>2022 - August</div>
           <div>Responsive Web Designed</div>
           <div>FreeCodeCamp</div>
-          <div>2022 - current</div>
-          <div>JavaScript Algorithms and Data Structures</div>
+          <div>2022 - September</div>
+          <div>.NET Esencial</div>
           <div>FreeCodeCamp</div>
+          <div>2022 - November</div>
+          <div>Introducing ASP.NET Core</div>
+          <div>LinkedIn</div>
+          <div>2022 - December</div>
+          <div>ASP.NET Core: Razor Pages</div>
+          <div>LinkedIn</div>
+          <div>2022 - October</div>
+          <div>C# and .NET Essential Training</div>
+          <div>LinkedIn</div>
         </section>
         <!-- Experience Section -->
         <h1 class="pt-5">Experience</h1>
         <section class="section-3">
-          <div>Comercial</div>
-          <div class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus placeat ipsum amet similique unde! Praesentium autem eveniet accusamus voluptatum aspernatur?</div>
-          <div>Support in Telemetry</div>
-          <div class="text-start pl-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dicta voluptatum earum optio sed distinctio vitae quae dignissimos illo delectus.</div>
+          <div class="text-right">Comercial</div>
+          <div class="text-start">
+            <ol>
+              <li class="li-dot">Assistance in the creation of formats for quotations</li>
+              <li class="li-dot">Diligence, sending and follow-up of quotations.</li>
+              <li class="li-dot">Customer support.</li>
+            </ol>
+          </div>
+          <div class="text-right">Support in Telemetry</div>
+          <div class="text-start pl-2">
+            <ol>
+              <li class="li-dot">Assistance in the creation of formats for quotations</li>
+              <li class="li-dot">Diligence, sending and follow-up of quotations.</li>
+              <li class="li-dot">Customer support.</li>
+            </ol>
+          </div>
         </section>
         <!-- Hobbies Section -->
         <section class="section-4">
@@ -121,5 +145,7 @@
       </div>
     </section>
     <%- include('partials/footer') %>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
