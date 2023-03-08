@@ -6,7 +6,10 @@ html{
 body{
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 77%);
+    background: url("./images/Space-Background-Image-3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
     color: #dfdce3;
 }
 
